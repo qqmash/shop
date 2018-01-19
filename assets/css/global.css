@@ -1,0 +1,155 @@
+/* 
+	Resets defualt browser settings
+	reset.css
+*/
+/*
+	Page style
+*/
+
+
+#container {
+    width:580px;
+    padding:10px;
+    margin:0 auto;
+    position:relative;
+    z-index:0;
+}
+
+#slide-content {
+	width:770px;
+	height:325px;
+	position:relative;
+    z-index: 1;
+}
+
+/*
+	Slideshow
+*/
+
+#slides {
+	position:absolute;
+    height: 325px;
+	z-index:100;
+}
+
+/*
+	Slides container
+	Important:
+	Set the width of your slides container
+	Set to display none, prevents content flash
+*/
+
+.slides_container {
+	width:770px;
+	overflow:hidden;
+	position:relative;
+    z-index: 10;
+	display:none;
+    background-color: #ff9107;
+
+    -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    -webkit-box-shadow: 0 15px 10px -10px rgba(0, 0, 0, 0.5), 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    -moz-box-shadow: 0 15px 10px -10px rgba(0, 0, 0, 0.5), 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    box-shadow: 0 15px 10px -10px rgba(0, 0, 0, 0.5), 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
+
+/*
+	Each slide
+	Important:
+	Set the width of your slides
+	If height not specified height will be set by the slide content
+	Set to display block
+*/
+
+.slides_container a {
+	width:770px;
+	height:300px;
+	display:block;
+}
+
+.slides_container a img {
+	display:block;
+}
+
+/*
+	Next/prev buttons
+*/
+
+#slides .next,#slides .prev {
+	position:absolute;
+	top:107px;
+	/*left:-39px;*/
+	width: 40px;
+	height: 55px;
+	display:block;
+	z-index:101;
+}
+
+#slides .next {
+	right: 0;
+}
+
+/*
+	Pagination
+*/
+
+.pagination {
+	/*width:100px;*/
+    height: 25px;
+    float: right;
+    margin-bottom: 30px;
+}
+
+.pagination li {
+	float:left;
+	margin:0 1px;
+	list-style:none;
+    text-align: center;
+    line-height: 25px;
+}
+
+.pagination li a {
+	display:block;
+	width:38px;
+	height: 25px;
+    /*padding-top:12px;
+     background-image:url(../images/pagination.png);
+     background-position:0 0;*/
+	float:left;
+	overflow:hidden;
+    background-color: #d8d8d8;
+    color: #000;
+    text-decoration: none;
+    border-radius:0 0 8px 8px;
+}
+
+.pagination li.current a {
+	/*background-position:0 -12px;*/
+    background-color: #ff9107;
+    color: #FFF;
+    position: relative;
+    z-index: 20;
+}
+
+/*
+	Footer
+*/
+
+#footer {
+	text-align:center;
+	width:580px;
+	margin-top:9px;
+	padding:4.5px 0 18px;
+	border-top:1px solid #dfdfdf;
+}
+
+#footer p {
+	margin:4.5px 0;
+	font-size:1.0em;
+}
+
+/*
+	Anchors
+*/
